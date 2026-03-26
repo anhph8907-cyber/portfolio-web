@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Modern personal portfolio website. Editable content, responsive, dark mode, and smooth animations." />
+    <title>Personal Portfolio | Creative Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="page-transition" class="page-transition"></div>
+    <header class="navbar-wrapper">
+      <nav class="navbar container">
+        <a class="brand" href="#home">Ngọc Ánh | Portfolio</a>
+        <button class="edit-toggle" id="toggleEdit">Edit mode</button>
+        <div class="nav-links" id="navLinks">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#goals">Goals</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+          <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">☾</button>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">☰</button>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero section" aria-label="hero section">
+        <div class="container hero-grid">
+          <div class="hero-text">
+            <p class="eyebrow" contenteditable="true">Digital Marketing</p>
+            <h1 class="title" contenteditable="true">Xin chào mình là <span class="gradient-text">Nguyễn Ngọc Ánh</span><br /></h1>
+            <div class="buttons">
+              <a href="#projects" class="btn primary">Xem Dự Án</a>
+              <a href="#contact" class="btn secondary">Liên hệ</a>
+            </div>
+          </div>
+          <div class="hero-visual" aria-hidden="true">
+            <div class="visual-card"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section about" aria-label="about section">
+        <div class="container section-grid">
+          <div class="profile-card animate" data-reveal>
+            <img src="images/76a8e61c-9a64-46ce-b38a-e1657ae5da10.jpg" alt="Profile" />
+            <div>
+              <h2 contenteditable="true">Về tôi</h2>
+              <p contenteditable="true">Em đang theo học chuyên ngành Digital Marketing với định hướng phát triển trở thành một Marketer toàn diện. Từng đảm nhận các vị trí từ Content Marketing đến Performance Marketing cho các thương hiệu thời trang và phụ kiện, em có khả năng bao quát chiến dịch từ khâu lên ý tưởng sản phẩm, định hình, thiết kế bộ nhận diện thương hiệu đến tối ưu hóa quảng cáo đa nền tảng.</p>
+              <div style="margin-top: 1.5rem;">
+                <h3 contenteditable="true">Thành tích</h3>
+                <div class="highlights">
+                  <div><strong contenteditable="true">Google:</strong><span contenteditable="true">Chứng chỉ Google AI Essential</span></div>
+                  <div><strong contenteditable="true">Cao đẳng FPT Polytechnic: </strong><span contenteditable="true">Sinh viên giỏi 3 kỳ liên tiếp</span></div>
+                  <div><strong contenteditable="true">Cuộc thi lồng tiếng/thuyết minh: </strong><span contenteditable="true">Giải ba Thanh âm lịch sử về Phan Đình Giót</span></div>
+                </div>
+              </div>
+              <div style="margin-top: 1.5rem;">
+                <h3 contenteditable="true">Hoạt động nổi bật</h3>
+                <div class="highlights">
+                  <div contenteditable="true">Tích cực tham gia hội thảo nâng cao chuyên môn (SEO MXH, E-commerce, AI...).</div>
+                  <div contenteditable="true">Tham gia trải nghiệm giai đoạn đầu chương trình Google Student Ambassador.</div>
+                  <div contenteditable="true">Kinh doanh dự án đồ ăn & trích quỹ từ thiện cho vùng khó khăn.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="goals" class="section" aria-label="goals section">
+        <div class="container">
+          <h2 contenteditable="true">Mục tiêu nghề nghiệp</h2>
+          <p class="section-lead" contenteditable="true">Hướng đến sự phát triển bền vững và đóng góp giá trị cho cộng đồng.</p>
+          <div class="goals-grid">
+            <div class="goal-card animate" data-reveal>
+              <h3 contenteditable="true">Ngắn hạn ( 3-5 tháng )</h3>
+              <p contenteditable="true">Tìm kiếm cơ hội thực tập trong môi trường marketing, áp dụng kỹ năng SEO, sáng tạo nội dung & tối ưu quảng cáo vào chiến dịch thực tế, đóng góp trực tiếp vào doanh thu.</p>
+            </div>
+            <div class="goal-card animate" data-reveal>
+              <h3 contenteditable="true">Dài hạn ( 3-5 năm )</h3>
+              <p contenteditable="true">Không ngừng học hỏi để trở thành chuyên viên Digital Marketing toàn diện và có thể tham gia quản lý, điều phối dự án độc lập.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section" aria-label="skills section">
+        <div class="container">
+          <h2 contenteditable="true">Kỹ năng và công cụ</h2>
+          <div class="skill-grid">
+            <div class="skill-card animate" data-reveal>
+              <h3 contenteditable="true">Chuyên môn</h3>
+              <ul>
+                <li contenteditable="true">Sáng tạo nội dung.</li>
+                <li contenteditable="true">Nghiên cứu khách hàng.</li>
+                <li contenteditable="true">Thiết lập và tối ưu Meta Business Suite.</li>
+              </ul>
+            </div>
+            <div class="skill-card animate" data-reveal>
+              <h3 contenteditable="true">Công cụ</h3>
+              <ul>
+                <li contenteditable="true">Canva Pro</li>
+                <li contenteditable="true">Capcut ( cơ bản )</li>
+                <li contenteditable="true">Figma ( cơ bản )</li>
+                <li contenteditable="true">Wordpress ( cơ bản )</li>
+                <li contenteditable="true">Tin học văn phòng</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section" aria-label="projects section">
+        <div class="container">
+          <div class="section-header">
+            <h2 contenteditable="true">Projects</h2>
+          </div>
+          <div class="projects-grid">
+            <article class="project-card animate" data-reveal>
+              <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80" alt="Project 1" />
+              <div class="card-content">
+                <h3 contenteditable="true">Dự án Thời trang Áo dài Lam Nguyệt</h3>
+                <p contenteditable="true">Lam Nguyệt là dự án thời trang áo dài hướng đến việc gìn giữ và phát huy giá trị truyền thống trong bối cảnh hiện đại. Lấy cảm hứng từ ánh trăng dịu dàng – biểu tượng của sự tinh tế và nữ tính, Lam Nguyệt mang đến những thiết kế thanh lịch, tối giản nhưng vẫn đậm đà bản sắc Việt.</p>
+                <button class="btn ghost" data-project="1">Chi tiết</button>
+              </div>
+            </article>
+            <article class="project-card animate" data-reveal>
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="Project 2" />
+              <div class="card-content">
+                <h3 contenteditable="true">Dự án thời trang Yên Mộc</h3>
+                <p contenteditable="true">Yên Mộc là dự án thời trang chuyên về áo dài mục tiêu hướng đến là có thể tiếp cận và định vị được thương hiệu trong lòng khách hàng mục tiêu nhanh nhất có thể thông qua chất liệu vải an toàn và quà tặng đi kèm khi mua sản phẩm từ thương hiệu.</p>
+                <button class="btn ghost" data-project="2">Chi tiết</button>
+              </div>
+            </article>
+            <article class="project-card animate" data-reveal>
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Project 3" />
+              <div class="card-content">
+                <h3 contenteditable="true">Dự án phụ kiện điện tử cá nhân hóa Zypher</h3>
+                <p contenteditable="true">Zyper là dự án về phụ kiện điện tử có thể cá nhân hóa (USP) được theo yêu cầu, mong muốn của khách hàng, hướng đến những khách hàng có niềm yêu thích với việc chi tiền cho các đồ phụ kiện điện thoại như: Ốp lưng, ốp sạc đth...</p>
+                <button class="btn ghost" data-project="3">Chi tiết</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section" aria-label="experience section">
+        <div class="container">
+          <h2 contenteditable="true">Kinh nghiệm</h2>
+          <div class="timeline">
+            <div class="timeline-item animate" data-reveal>
+              <span class="timeline-date" contenteditable="true">8-10/2026</span>
+              <h3 contenteditable="true">Dự án thời trang Yên Mộc</h3>
+              <p contenteditable="true">Leader & Content Marketing cho dự án thời trang, dẫn dắt chiến lược nội dung và phát triển storytelling thương hiệu nhằm nâng cao tương tác và chuyển đổi.</p>
+            </div>
+            <div class="timeline-item animate" data-reveal>
+              <span class="timeline-date" contenteditable="true">1-3/2026</span>
+              <h3 contenteditable="true">Dự án phụ kiện điện tử cá nhân hóa Zypher</h3>
+              <p contenteditable="true">Dẫn dắt dự án phụ kiện điện tử cá nhân hóa từ định vị sản phẩm đến go-to-market, tối ưu trải nghiệm khách hàng và thông điệp giá trị để thúc đẩy tăng trưởng doanh thu và độ gắn kết thương hiệu.</p>
+            </div>
+            <div class="timeline-item animate" data-reveal>
+              <span class="timeline-date" contenteditable="true">5-7/2025</span>
+              <h3 contenteditable="true">Dự án Thời trang áo dài Lam Nguyệt</h3>
+              <p contenteditable="true">Triển khai chiến lược Performance Marketing cho dự án áo dài, tối ưu quảng cáo theo dữ liệu để gia tăng chuyển đổi, nâng cao nhận diện thương hiệu và đạt hiệu quả kinh doanh bền vững.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact" aria-label="contact section">
+        <div class="container">
+          <h2 contenteditable="true">Liên hệ</h2>
+          <p contenteditable="true">Hãy thoải mái nhắn tin cho tôi nếu bạn muốn hợp tác, làm việc tự do hoặc chỉ đơn giản là chào hỏi.</p>
+          <form id="contactForm" class="contact-form" autocomplete="off">
+            <div class="form-grid">
+              <input type="text" id="name" name="name" placeholder="Your Name" required />
+              <input type="email" id="email" name="email" placeholder="Your Email" required />
+              <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn primary">Send Message</button>
+            <p id="contactStatus" class="form-status" role="status"></p>
+          </form>
+          <div class="social-links">
+            <a href="https://www.linkedin.com" target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a>
+            <a href="https://www.facebook.com" target="_blank" rel="noreferrer" aria-label="Facebook">fb</a>
+            <a href="https://www.instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram">ig</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>© <span id="footerYear"></span> Ngọc Ánh. Built with minimal systems. <span contenteditable="true">All rights reserved.</span></p>
+        <div class="footer-social">
+          <a href="https://facebook.com" target="_blank" rel="noreferrer">Facebook</a>
+          <a href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
+
+    <dialog id="projectModal" class="modal" aria-modal="true" role="dialog">
+      <div class="modal-content">
+        <button id="closeModal" class="close-modal" aria-label="Close details">✕</button>
+        <h3 id="modalTitle">Tên Dự Án</h3>
+        <div id="modalImages" class="modal-images">
+          <!-- Hình ảnh sẽ được thêm vào đây qua JavaScript -->
+        </div>
+        <div class="modal-details">
+          <div class="modal-section">
+            <h4>Vai trò của tôi</h4>
+            <p id="modalRole">Mô tả vai trò</p>
+          </div>
+          <div class="modal-section">
+            <h4>Công cụ & Kỹ năng sử dụng</h4>
+            <p id="modalSkills">Danh sách công cụ và kỹ năng</p>
+          </div>
+          <div class="modal-section">
+            <h4>Kết quả đạt được</h4>
+            <p id="modalResults">Mô tả kết quả</p>
+          </div>
+        </div>
+        <a id="modalLink" class="btn primary" href="#" target="_blank">Xem Dự Án</a>
+      </div>
+    </dialog>
+
+    <script src="project-data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
